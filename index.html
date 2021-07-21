@@ -1,1 +1,63 @@
-<h1>Get Wrecked Insect!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Sylvester Game Studios</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+</head>
+<script>
+    // Selecting the iframe element
+    var iframe = document.getElementById("trailer");
+
+    // Adjusting the iframe height onload event
+    iframe.onload = function(){
+        const { width, height } = document.querySelector("iframe").getBoundingClientRect();
+        iframe.style.height = width * 0.58 + "px";
+    }
+    </script>
+<body>
+  <div class="navbar">
+    <a href="#Contact" class="right">Contact us</a>
+    <a href="#Privacy" class="right">Privacy Policy</a>
+    <a href="#About" class="right">About us</a>
+   <a href="#Home" class="right">Home</a>
+  </div>
+
+  <div class="header" id="Home">
+  </div>
+
+  <div class="column">
+    <div class="main">
+      <div class="title">
+        <img class="logo" src="img/transparent.png" style="width:150px" alt="logo">
+        <h1>Get Wrecked Insect</h1>
+      </div>
+      <p>Get Wrecked Insect is a game developed for iOS which is played with facial gestures. The player embodies a chameleon and aims at insects with his/her mouth. By opening the mouth, the tongue of the chameleon is launced and points are earned. The aim is to survive as long as possible.</p>
+      <p>Get Wrecked Insect is developed for iOS and uses the TruDepth camera that exist in iPhone X and up. The game is developed with ARKit and Unity. Currently the game is in process to be published to App Store.</p>
+      <br>
+      <iframe id="trailer" src="https://www.youtube.com/embed/Nt-Oh2yAy3s" width="100%" height="400" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+    </div>
+    <div id ="About" class="main">
+      <div class="title">
+      <img class="logo" src="img/transparent.png" style="width:50px" alt="logo"><h2>About Sylvester Game Studios</h2>
+      </div>
+      <p>We are two indie game developers located in Sweden. Currently working on getting our game Get Wrecked Insect published to the App Store! </p>
+    </div>
+    <div id ="Privacy" class="main">
+      <div class="title">
+      <img class="logo" src="img/transparent.png" style="width:50px" alt="logo"><h2>Privacy Policy</h2>
+      </div>
+      <p>We do not collect any data in the game. No third-party is used that collects data either.</p>
+    </div>
+    <div id ="Contact" class="main">
+      <div class="title">
+      <img class="logo" src="img/transparent.png" style="width:50px" alt="logo"><h2>Contact us!</h2>
+      </div>
+      For contact or support issues, email us at: sylvestergamestudios@gmail.com
+    </div>
+  </div>
+
+  <div class="footer"></div>
+</body>
+</html>
